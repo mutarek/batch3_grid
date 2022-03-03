@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --primary-color:blue;
+            --text-color: red;
+            --layout-color: green;
+        }
         .main-layout{
             display: grid;
             grid-template-columns: repeat(12,1fr);
-            grid-template-rows: 100px 200px 100px;
+            grid-template-rows: 100px auto 100px;
             grid-template-areas: 
             "h h h h h h h h h h h h"
             "m c c c c c c c c c c c"
@@ -18,7 +23,7 @@
         }
         .header{
             grid-column: h;
-            background-color: aqua;
+            background-color: var(--layout-color);
         }
         .menu{
             grid-column: m;
@@ -26,19 +31,67 @@
         }
         .content{
             grid-column: c;
-            background-color: burlywood;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-areas: 
             "oc oc oc sb";
         }
-        .orginal-content{
+        .main-content{
             grid-column: oc;
-            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .each-product{
+            width: auto;
+            height: auto;
+            padding: 10px;
+            border: 1px solid var(--layout-color);
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .each-product:hover{
+            box-shadow: 2px 3px 20px 6px grey;
+        }
+        .each-product img{
+            max-width: 130px;
+            min-width: 50px;
+            min-height: 100px;
+            border-radius: 15px;
+        }
+        .each-product h1{
+            font-size: 20px;
+        }
+        .price-cart{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .price{
+            flex: 1;
+        }
+        .price h1{
+            font-size: 18px;
+            color: var(--text-color);
+        }
+        .cart{
+            flex: 1;
+            border: 1px solid var(--layout-color);
+            border-radius: 5px;
+            color: var(--text-color);
+        }
+        .cart:hover{
+            border: 1px solid var(--layout-color);
+            border-radius: 5px;
+            color: black;
+            box-shadow: 1px 1px 5px 5px black;
+        }
+        .cart button{
+            padding: 1px;
+            background-color: brown;
         }
         .sidebar{
             grid-column: sb;
-            background-color: cornflowerblue;
         }
         .footer{
             grid-column: f;
@@ -51,7 +104,143 @@
         <div class="header">Header</div>
         <div class="menu"> Menu</div>
         <div class="content">
-            <div class="main-content">Orginal Content</div>
+            <div class="main-content">
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="each-product">
+                        <h1>Hp Laptop</h1>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+                        <div class="price-cart">
+                            <div class="price">
+                                <h1>23000 Tk</h1>
+                            </div>
+                            <div>
+                                <button class="cart">Cart</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
             <div class="sidebar">Sidebar</div>
         </div>
         <div class="footer">Footer</div>
