@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-layout{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 100px 200px 100px;
+            grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "m c c c c c c c c c c c"
+            "f f f f f f f f f f f f"
+            ;
+        }
+        .header{
+            grid-column: h;
+            background-color: aqua;
+        }
+        .menu{
+            grid-column: m;
+            background-color: blueviolet;
+        }
+        .content{
+            grid-column: c;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "oc oc oc sb";
+        }
+        .orginal-content{
+            grid-column: oc;
+            background-color: black;
+        }
+        .sidebar{
+            grid-column: sb;
+            background-color: cornflowerblue;
+        }
+        .footer{
+            grid-column: f;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-layout">
+        <div class="header">Header</div>
+        <div class="menu"> Menu</div>
+        <div class="content">
+            <div class="main-content">Orginal Content</div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

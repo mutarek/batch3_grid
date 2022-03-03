@@ -1,0 +1,107 @@
+body{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+@media(min-width: 780px){
+.cont-flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 800px;
+	align-items: center;
+}
+
+.custom-header{
+	display: flex;
+	align-items: center;
+}
+
+}
+
+.teamcontainer{
+	width: 200px;
+	max-height: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.team{
+	border: 2px solid red;
+}
+
+.team img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.team h2{
+	padding-left: 5px;
+}
+
+.logo-section{
+	flex: 3;
+}
+
+.nav-section{
+	flex: 1;
+
+}
+
+.logo-section h1{
+	font-size: 40px;
+	color: red;
+	padding-left: 50px;
+}
+
+.nav-section a{
+	font-size: 25px;
+	color: ;
+	text-decoration: none;
+	margin-left: 20px;
+	border: 2px solid black;
+	padding:2px;
+	border-radius: 5px;
+
+}
+
+
+
+.post{
+	min-width: 20%;
+	max-width: 410px;
+	height: 500px;
+	box-shadow: 2px 4px 20px 5px grey;
+	border-radius: 15px;
+	padding: 10px; 
+	background-color: #FFFFCC;
+	margin-bottom: 50px;
+}
+
+.post h1{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	color: red;
+
+}
+
+.post:hover{
+	box-shadow: none;
+	background-color: green;
+
+}
+
+.post:active{
+	box-shadow: 10px 20px 100px 100px red;
+}
+.post:visited{
+	background-color: 
+}
+
+
+
+
+
