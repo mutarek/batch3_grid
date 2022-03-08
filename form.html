@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="theForm">
+        <input type="radio" name="area" value="1000"> Melborne <br>
+        <input type="radio"  name="area" value="3000"> S Melborne <br>
+        <input type="radio"  name="area" value="6000"> T Melborne <br>
+        <input type="radio"  name="area" value="10000"> x Melborne <br>
+    </form>
+    <button onclick="showValue()">Output</button>
+
+    <script>
+       var img = document.querySelector('input[name="area"]:checked').value;
+
+        function showValue() {
+            alert(img);
+        }
+    </script>
+</body>
+</html>

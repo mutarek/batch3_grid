@@ -113,7 +113,7 @@
                       while(a<size){
                         document.write(`<div class="each-product">
                         <h1>${data[a]['title']['rendered']}</h1>
-                        <img src="${data[a]['jetpack_featured_media_url']}" alt="">
+                        <img src="${data[a]['_embedded']['wp:featuredmedia'][0]['source_url']}" alt="">
                         <div class="price-cart">
                             <div class="price">
                                 <h1>2000 Tk</h1>
