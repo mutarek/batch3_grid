@@ -98,6 +98,7 @@
             background-color: brown;
         }
     </style>
+    <script src="data.js"></script>
 </head>
 <body>
     <div class="main-layout">
@@ -105,141 +106,31 @@
         <div class="menu"> Menu</div>
         <div class="content">
             <div class="main-content">
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+
+                   <script>
+                      var a = 0;
+                      var size = data.length;
+                      while(a<size){
+                        document.write(`<div class="each-product">
+                        <h1>${data[a]['title']['rendered']}</h1>
+                        <img src="${data[a]['jetpack_featured_media_url']}" alt="">
                         <div class="price-cart">
                             <div class="price">
-                                <h1>23000 Tk</h1>
+                                <h1>2000 Tk</h1>
                             </div>
                             <div>
                                 <button class="cart">Cart</button>
                             </div>
                         </div>
-                    </div>
+                    </div>`);
+                        a++;
+                      }
+                   </script>
 
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                   
 
 
 
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="each-product">
-                        <h1>Hp Laptop</h1>
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
-                        <div class="price-cart">
-                            <div class="price">
-                                <h1>23000 Tk</h1>
-                            </div>
-                            <div>
-                                <button class="cart">Cart</button>
-                            </div>
-                        </div>
-                    </div>
             </div>
             <div class="sidebar">Sidebar</div>
         </div>
