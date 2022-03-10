@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .mydiv{
+       background-color: bisque;
+   }
+   .regulardesign{
+       width: 80%;
+       height: 400px;
+       padding: 20px;
+       margin: 30px;
+       border: 5px solid red;
+   }
+   .regulardesign img{
+       width: 50%;
+       height: 250px;
+       border-radius: 20px;
+   }
+   .customdesign{
+       width: 400px;
+       height: 400px;
+       border: 5px solid black;
+       padding: 5px;
+       box-shadow: 3px 4px 5px 0px grey;
+   }
+   .customdesign img{
+       height: 250px;
+       border-radius: 40px;
+       margin-left: 10px;
+   }
+   .customdesign h1{
+       text-align: center;
+   }
+   .customdesign p{
+       text-align: center;
+       font-size: 12px;
+   }
+   button{
+       padding: 2px;
+       background-color: blue;
+       color: white;
+   }
+</style>
+<body>
+
+    <div id="maindiv" class="regulardesign">
+        <h1>Patenga Sea Beach</h1>
+        <img src="https://thefinancialexpress.com.bd/uploads/1639194548.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="maindiv" class="regulardesign">
+        <h1>Patenga Sea Beach</h1>
+        <img src="https://thefinancialexpress.com.bd/uploads/1639194548.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="maindiv" class="regulardesign">
+        <h1>Patenga Sea Beach</h1>
+        <img src="https://thefinancialexpress.com.bd/uploads/1639194548.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="maindiv" class="regulardesign">
+        <h1>Patenga Sea Beach</h1>
+        <img src="https://thefinancialexpress.com.bd/uploads/1639194548.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <button onclick="showRegular()">Regular Design</button>
+    <button onclick="showCustom()">Custom Design</button>
+
+
+    <script src="dom.js"></script>
+</body>
+</html>

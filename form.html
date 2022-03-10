@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,32 @@
         <input type="radio" name="area" value="1000"> Melborne <br>
         <input type="radio"  name="area" value="3000"> S Melborne <br>
         <input type="radio"  name="area" value="6000"> T Melborne <br>
-        <input type="radio"  name="area" value="10000"> x Melborne <br>
+        <input type="radio"  name="area" value="10000"> X Melborne <br>
+    
+        <input type="radio" name="anoarea" value="1000" checked> Melborne <br>
+        <input type="radio"  name="anoarea" value="3000"> S Melborne <br>
+        <input type="radio"  name="anoarea" value="6000"> T Melborne <br>
+        <input type="radio"  name="anoarea" value="10000"> X Melborne <br>
+
+        
     </form>
-    <button onclick="showValue()">Output</button>
+
+    
+
+    <br>
+
+    <button onclick="disply()">Output</button>
+
+    <!-- <p id="demo" onclick="disply()">nb mm</p> -->
 
     <script>
-       var img = document.querySelector('input[name="area"]:checked').value;
+        function display() {
+            var value1 = document.querySelector('input[name="area"]:checked').value;
+        var value2 = document.querySelector('input[name="anoarea"]:checked').value;
+        var res = parseInt(value)+parseInt(value1);
+        }  
 
-        function showValue() {
-            alert(img);
-        }
+
     </script>
 </body>
 </html>
